@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, Database, TrendingUp, PieChart as PieIcon, Target, Award, ArrowRight } from 'lucide-react';
+import { Leaf, Database, TrendingUp, PieChart as PieIcon, Target, Award, ArrowRight, ArrowDown } from 'lucide-react';
 
 const HomePage = () => (
   <div className="space-y-12 max-w-5xl">
@@ -12,15 +12,16 @@ const HomePage = () => (
           <span className="text-[#8A9A5B] mt-2 block font-normal text-3xl md:text-4xl">Analytics Dashboard</span>
         </h1>
         <p className="text-[#333333] leading-relaxed max-w-md text-sm md:text-base font-normal">
-          วิเคราะห์เจาะลึกกลุ่มลูกค้าแชมพูปิดผมขาวออร์แกนิค เพื่อค้นหา "Winning Zone" ที่ผสานความอ่อนโยนจากธรรมชาติ เข้ากับประสิทธิภาพสีติดทนนาน
+          วิเคราะห์เจาะลึกกลุ่มลูกค้าแชมพูปิดผมขาวออร์แกนิค เพื่อค้นหา <span className="font-medium text-[#8A9A5B]">"Winning Zone"</span>
         </p>
       </div>
-      <div className="bg-[#8A9A5B] text-white p-8 rounded-[32px] shadow-xl relative overflow-hidden">
-         <Leaf size={200} className="absolute -right-10 -top-10 opacity-10" />
-         <h3 className="text-2xl font-serif font-medium mb-4">วัตถุประสงค์</h3>
-         <p className="text-sm leading-loose opacity-90">สกัด Insights จากข้อมูล Survey เพื่อสร้างโมเดลทำนายการเป็นลูกค้ากลุ่มคุณภาพ และแบ่งกลุ่ม Persona เพื่อการวางกลยุทธ์สื่อสารที่แม่นยำ</p>
+      <div className="bg-[#8A9A5B] text-white p-8 rounded-[32px] relative overflow-hidden">
+        <Leaf size={200} className="absolute -right-10 -top-10 opacity-10" />
+        <h3 className="text-2xl font-serif font-medium mb-4">วัตถุประสงค์หลัก</h3>
+        <p className="text-sm leading-loose">สกัด Insights เพื่อสร้างโมเดลทำนายการเป็นลูกค้ากลุ่มคุณภาพ</p>
       </div>
     </div>
   </div>
 );
+
 export default HomePage;
