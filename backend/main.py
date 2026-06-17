@@ -9,9 +9,7 @@ app = Flask(__name__)
 # อนุญาตให้ React (Frontend) เรียกใช้งาน API ได้
 CORS(app)
 
-# ==========================================
-# 1. โหลด Model และ Scaler เตรียมไว้
-# ==========================================
+# โหลด Model และ Scaler เตรียมไว้
 try:
     with open('best_supervised_model.pkl', 'rb') as f:
         model = pickle.load(f)
